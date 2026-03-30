@@ -1,0 +1,133 @@
+/* Estilos formulario de contacto - Taller Web AIEP */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* ==========================================
+   ESTILO GENERAL
+   ========================================== */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eeeeee;
+    padding: 30px;
+}
+
+/* Caja principal del formulario */
+.contenedor {
+    background-color: white;
+    padding: 35px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    border-top: 4px solid #CC0000;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+}
+
+/* ==========================================
+   LOGO Y TÍTULO
+   ========================================== */
+
+.logo {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo img {
+    width: 130px;
+}
+
+h1 {
+    color: #003087;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 15px;
+}
+
+/* ==========================================
+   CAMPOS DEL FORMULARIO
+   ========================================== */
+
+/* Espacio entre cada campo */
+.campo {
+    margin-bottom: 18px;
+}
+
+/* Etiqueta de cada campo */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Estilo de inputs y textarea */
+input, textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #bbbbbb;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+/* Borde azul cuando el campo está activo */
+input:focus, textarea:focus {
+    border-color: #0057B8;
+    outline: none;
+}
+
+/* Altura del área de mensaje */
+textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+/* ==========================================
+   ERRORES DE VALIDACIÓN
+   Están vacíos por defecto
+   JavaScript escribe el mensaje aquí
+   ========================================== */
+
+.error {
+    color: #CC0000;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+/* ==========================================
+   BOTÓN ENVIAR
+   ========================================== */
+
+button {
+    width: 100%;
+    padding: 11px;
+    background-color: #CC0000;
+    color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* Color más oscuro al pasar el mouse */
+button:hover {
+    background-color: #aa0000;
+}
+
+/* ==========================================
+   MENSAJE DE RESULTADO
+   JavaScript cambia el color según si el
+   envío fue exitoso o falló
+   ========================================== */
+
+#resultado {
+    margin-top: 14px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedor">
+
+    <!-- Logo AIEP -->
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/AIEP-alt-azul_1.png" 
+           alt="Logo AIEP">
+    </div>
+
+    <!-- Título -->
+    <h1>Formulario de Contacto</h1>
+
+    <form id="formulario" novalidate>
+
+      <!-- Campo Nombre -->
+      <div class="campo">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" 
+               placeholder="Ej: Juan Pérez"
+               required 
+               minlength="3">
+        <span class="error" id="error-nombre"></span>
+      </div>
+
+      <!-- Campo Correo -->
+      <div class="campo">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" 
+               placeholder="Ej: juan@correo.com"
+               required>
+        <span class="error" id="error-correo"></span>
+      </div>
+
+      <!-- Campo Mensaje -->
+      <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" 
+                  placeholder="Escribe tu mensaje aquí..."
+                  required 
+                  minlength="10"></textarea>
+        <span class="error" id="error-mensaje"></span>
+      </div>
+
+      <!-- Botón enviar -->
+      <button type="submit" id="btn-enviar">Enviar mensaje</button>
+
+      <!-- Mensaje de resultado del envío -->
+      <p id="resultado"></p>
+
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
