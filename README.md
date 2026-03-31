@@ -34,7 +34,7 @@ Formulario web desarrollado con HTML, CSS y JavaScript que incluye validación d
 
 ## Informe asociado
 
-- 
+- https://github.com/gruposiete-aiep/formulario-js-aiep/blob/main/Informe_Formulario_JS.docx
 
 ## Integrantes
 
